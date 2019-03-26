@@ -1,13 +1,25 @@
 package com.example.movieapp
 
-data class Movie(var title: String ="",
-              var rating: String ="",
-              var release: String="",
-              var runtime: String ="",
-              var genre: String ="",
-              var actor: String ="",
-              var plot: String ="",
-              var toolbar: String ="")
+import com.google.gson.annotations.SerializedName
+
+data class Movie(
+    @SerializedName("Title")
+    var title: String = "",
+    @SerializedName("Year")
+    var year: String = "",
+    @SerializedName("Rated")
+    var rated: String = "",
+    @SerializedName("Released")
+    var released: String = "",
+    @SerializedName("Runtime")
+    var runtime: String = "",
+    @SerializedName("Genre")
+    var genre: String = "",
+    @SerializedName("Director")
+    var director: String = "",
+    @SerializedName("Actors")
+    var actors: String = ""
+)
 
 
 
