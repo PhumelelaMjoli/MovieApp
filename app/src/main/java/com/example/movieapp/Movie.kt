@@ -3,6 +3,8 @@ package com.example.movieapp
 import com.google.gson.annotations.SerializedName
 
 data class Movie(
+    @SerializedName("Poster")
+    var img: String ="",
     @SerializedName("Title")
     var title: String = "",
     @SerializedName("Year")

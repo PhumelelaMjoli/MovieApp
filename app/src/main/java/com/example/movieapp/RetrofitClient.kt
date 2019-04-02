@@ -37,9 +37,9 @@ fun getData():Movie?{
         Director: String = "",
         apiKey: String = ""
     ): List<Movie>? {
-        val request = movieRetrievalService.getMovies(Title, Year, Rated, Released, Runtime, Genre, Director, apiKey)
- val movieCallback = MovieCallback()
-        request.enqueue(movieCallback)
+        //val request = movieRetrievalService.getMoviesRequest(Title, Year, Rated, Released, Runtime, Genre, Director, apiKey)
+       // val movieCallback = MovieCallback()
+        //request.enqueue(movieCallback)
 
         /*if (response.isSuccessful) {
             return response.body()
@@ -60,4 +60,3 @@ fun getData():Movie?{
 //        movie = response.body()
 //        Log.d("Movies response success", movie.toString())
 //    }
-}
